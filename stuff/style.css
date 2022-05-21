@@ -1,0 +1,121 @@
+header{
+  background-color: #FE912C;
+  height: 200px;
+  width: 100%;
+
+    
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.text2 {
+  width: 60%;
+}
+
+
+
+.h1{
+  font-size: 48px;
+  font-family: fiora-monograms, sans-serif;
+font-weight: 400;
+font-style: normal;
+}
+
+.h2{
+  font-size: 30px;
+  font-family: fiora-monograms, sans-serif;
+font-weight: 400;
+font-style: normal;
+}
+
+.h3 {
+  font-size: 24px;
+  font-family: fiora-monograms, sans-serif;
+font-weight: 400;
+font-style: normal;
+}
+
+.p {
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .landingPage {
+    margin-top: 100px;
+    border-radius: 25px; 
+    
+  }
+  .top-grid {
+    display: grid;
+    grid-template-columns: 20% 30% 40%;
+  gap: 30px  }
+
+  .text {
+    width: 100%;
+    margin-top: 200px;
+  
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  header{
+    background-color: #FE912C;
+    height: 100px;
+    width: 100%;
+  }
+
+  .landingPage {
+    margin-top: 70px;
+    width: 100%;
+    border-radius: 25px; 
+  }
+
+  landingPage {
+    width: 100%;
+  }
+
+  body {
+    padding-left: 1px;
+    padding-right: 1px;
+  }
+
+}
+
+@media only screen and (min-width: 601px, max-width: 1200px) {
+
+}
+}
