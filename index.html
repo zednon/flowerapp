@@ -11,10 +11,10 @@
 <body>
     <nav>
         <ul>
-            <li><a class="active" href="#home">Log In</a></li>
-            <li><a href="#news">Tips</a></li>
-            <li><a href="#contact">What is it?</a></li>
-            <li><a href="#about">Home</a></li>
+            <li><a class="active" href="#login">Log In</a></li>
+            <li><a href="#tips">Tips</a></li>
+            <li><a href="#whatisit">What is it?</a></li>
+            <li><a href="#home">Home</a></li>
           </ul> 
     </nav>
 <header>  
@@ -62,6 +62,49 @@
     </div>  
 </section>
 
+<section>
+    <div class="center-grid"></div>
+    <div class="blank"></div>
+<div class="navyBar">
+
+
+   
+   <form style="border:5px solid #261E47" class="box">
+    <h2 class="h1">Sign up</h2>
+<label class="p" for="First Name"><b>Email</b></label>
+    <input text="text" class="inputMax" id="email" placeholder="jimjones@gmail.com" name="userName">
+    <label class="p" for="psw"><b>Password:</b></label>
+    <input type="password" id="password" class="inputMax"  placeholder="Rose1234" name="psw" required>
+
+    <label class="p" for="psw-repeat"><b>Repeat Password:</b></label>
+    <input type="password" class="inputMax"  placeholder="Repeat Your Password" name="psw-repeat" required> 
+    <button type="button" class="cancelbtn">Cancel</button>
+    <button type="submit" onclick="register()" class="signupbtn">Sign Up</button>
+
+
+   </form> 
+
+
+
+</div>
+</div>
+
+
+</section>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+ https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
 
   </main>
 <footer>
@@ -71,5 +114,32 @@
 
 
 </div>
+<script type="module">
+   // Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+import { getDatabase } from "firebase/database";
+import { getAuth } from "firebase/auth";
+
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyDodL_77Iu4hKfCOC-KvWHffeLY4lLUE94",
+  authDomain: "flowerapp-3af25.firebaseapp.com",
+  projectId: "flowerapp-3af25",
+  storageBucket: "flowerapp-3af25.appspot.com",
+  messagingSenderId: "418320932762",
+  appId: "1:418320932762:web:f84c1f931ffb5597da6423",
+  measurementId: "G-QMWDT8ZLZF"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+
+const auth = getAuth(app);
+  </script>
+  <script src="/stuff/main.js"></script>
 </body>
 </html>

@@ -65,6 +65,36 @@ font-style: normal;
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.inputMax  {
+  width: 90%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: solid #261E47 1px;
+  background: #f1f1f1;
+}
+
+.inputMax:focus {
+  background-color: #ffffff67;
+  outline: dashed #261E47;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.box {
+  margin: 10px 5px 10px 30px;
+  padding: 25px 40px;
+  width: 50%;
+}
+
+
+
+.box {
+border: solid #261E47 2px;
+}
 
 
 * {
