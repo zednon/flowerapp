@@ -8,6 +8,38 @@ body {
 background-color: #E8E4F6;
 }
 
+.mainbtn {
+  padding: 10px 15px;
+  margin: 2px;
+  background-color: #00ACA4;
+  color: white;
+  border-radius: 12%;
+}
+
+.mainbtn:hover {
+  border-radius: 12%;
+  border: dotted 2px #792F61; 
+  background-color:white;
+  color:#261E47;
+}
+
+.secondbtn {
+  padding: 10px 15px;
+  margin: 2px;
+  background-color: #FE912C;
+  color: white;
+  border-radius: 12%;
+
+
+}
+
+.secondbtn:hover {
+  border-radius: 12%;
+  border: dotted 2px #792F61; 
+  background-color:white;
+  color:#261E47;
+}
+
 
 ul {
   list-style-type: none;

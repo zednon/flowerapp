@@ -78,8 +78,9 @@
 
     <label class="p" for="psw-repeat"><b>Repeat Password:</b></label>
     <input type="password" class="inputMax"  placeholder="Repeat Your Password" name="psw-repeat" required> 
-    <button type="button" class="cancelbtn">Cancel</button>
-    <button type="submit" onclick="register()" class="signupbtn">Sign Up</button>
+    <button type="submit" onclick="signup()" class="mainbtn">Sign Up</button>
+    <button type="button" class="secondbtn">Cancel</button>
+ 
 
 
    </form> 
@@ -98,13 +99,15 @@
     </div>
 </div>
 </body>
+<script type="module" src="milsymbol-2.0.0/src/milsymbol.js"></script>
+
 <!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+<script type="module" src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
 
 <!-- TODO: Add SDKs for Firebase products that you want to use
  https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+<script type="module"  src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+<script type="module" src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
 
   </main>
 <footer>
@@ -140,6 +143,6 @@ const app = initializeApp(firebaseConfig);
 
 const auth = getAuth(app);
   </script>
-  <script src="/stuff/main.js"></script>
+  <script type="module" src="/stuff/main.js"></script>
 </body>
 </html>

@@ -22,7 +22,9 @@ const app = initializeApp(firebaseConfig);
 
 const auth = getAuth(app);
 const database = getDatabase(app);
-
+document.getElementById("signup").onclick = function() {  
+    register()  
+    };  
 function register () {
   // Get all our input fields
   email = document.getElementById('email').value
